@@ -6,9 +6,9 @@ import { galleryItems } from './gallery-items';
 
 const galleryContainer = document.querySelector('.gallery');
 
-galleryContainer.insertAdjacentHTML('beforeend', makeListItems(galleryItems));
+galleryContainer.insertAdjacentHTML('beforeend', createMarkup(galleryItems));
 
-function makeListItems(images) {
+function createMarkup(images) {
     return images.map(({ preview, original, description }) => 
         `<li class="gallery__item">
             <a class="gallery__link" href="${original}">
