@@ -1,113 +1,80 @@
-# Vanilla App Template
+<div align="center" id="top"> 
+ 
+  &#xa0;
 
-Цей проект було створено за допомогою Vite. Для знайомства та налаштування
-додаткових можливостей [звернись до документації](https://vitejs.dev/).
+<a href="https://korbetmaryna.github.io/goit-advancedjs-hw-01/">Visit site</a>
 
-## Створення репозиторію за шаблоном
+</div>
 
-Використовуй цей репозиторій організації GoIT як шаблон для створення
-репозиторію свого проекту. Для цього натисни на кнопку `«Use this template»` і
-обери опцію `«Create a new repository»`, як показано на зображенні.
+<h1 align="center">Goit Advancedjs Hw 01</h1>
 
-![Creating repo from a template step 1](./assets/template-step-1.png)
+<p align="center">
+  <img alt="Github top language" src="https://img.shields.io/github/languages/top/KorbetMaryna/goit-advancedjs-hw-01?color=56BEB8">
 
-На наступному етапі відкриється сторінка створення нового репозиторію. Заповни
-поле його імені, переконайся, що репозиторій публічний, після чого натисни
-кнопку `«Create repository from template»`.
+  <img alt="Github language count" src="https://img.shields.io/github/languages/count/KorbetMaryna/goit-advancedjs-hw-01?color=56BEB8">
 
-![Creating repo from a template step 2](./assets/template-step-2.png)
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/KorbetMaryna/goit-advancedjs-hw-01?color=56BEB8">
 
-Після того, як репозиторій буде створено, необхідно перейти в налаштування
-створеного репозиторію на вкладку `Settings` > `Actions` > `General` як показано
-на зображенні.
+  <img alt="License" src="https://img.shields.io/github/license/KorbetMaryna/goit-advancedjs-hw-01?color=56BEB8">
 
-![Settings GitHub Actions permissions step 1](./assets/gh-actions-perm-1.png)
+</p>
 
-Проскроливши сторінку до самого кінця, в секції `«Workflow permissions»` обери
-опцію `«Read and write permissions»` і постав галочку в чекбоксі. Це необхідно
-для автоматизації процесу деплою проекту.
+<p align="center">
+  <a href="#dart-about">About</a> &#xa0; | &#xa0; 
+  <a href="#sparkles-features">Task 1</a> &#xa0; | &#xa0;
+  <a href="#sparkles-features">Task 2</a> &#xa0; | &#xa0;
+  <a href="#sparkles-features">Task 3</a> &#xa0; | &#xa0;
+  <a href="#rocket-technologies">Technologies</a> &#xa0; | &#xa0;
+</p>
 
-![Settings GitHub Actions permissions step 2](./assets/gh-actions-perm-2.png)
+<br>
 
-Тепер у тебе є особистий репозиторій проекту, зі структурою файлів та папок
-репозиторію-шаблону. Далі працюй з ним, як з будь-яким іншим особистим
-репозиторієм, клонуй його собі на комп'ютер, пиши код, роби коміти та відправляй
-їх на GitHub.
+## :dart: About
 
-## Підготовка до роботи
+Neoversity's homework tasks
 
-1. Переконайся, що на комп'ютері встановлено LTS-версію Node.js.
-   [Скачай та встанови](https://nodejs.org/en/) її якщо необхідно.
-2. Встанови базові залежності проекту в терміналі командою `npm install`.
-3. Запусти режим розробки, виконавши в терміналі команду `npm run dev`.
-4. Перейдіть у браузері за адресою
-   [http://localhost:5173](http://localhost:5173). Ця сторінка буде автоматично
-   перезавантажуватись після збереження змін у файли проекту.
+## :sparkles: Tasks
 
-## Файли і папки
+:heavy_check_mark: Task 1;\
 
-- Файли розмітки компонентів сторінки повинні лежати в папці `src/partials` та
-  імпортуватись до файлу `index.html`. Наприклад, файл з розміткою хедера
-  `header.html` створюємо у папці `partials` та імпортуємо в `index.html`.
-- Файли стилів повинні лежати в папці `src/css` та імпортуватись до HTML-файлів
-  сторінок. Наприклад, для `index.html` файл стилів називається `index.css`.
-- Зображення додавай до папки `src/img`. Збирач оптимізує їх, але тільки при
-  деплої продакшн версії проекту. Все це відбувається у хмарі, щоб не
-  навантажувати твій комп'ютер, тому що на слабких компʼютерах це може зайняти
-  багато часу.
+1. Add the SimpleLightbox library as a project dependency using npm (the CDN
+   link from your past work is no longer needed).
+2. Use your JavaScript code from the previous homework, but refactor it given
+   that the library was installed via npm (import/export syntax).
 
-## Деплой
+:heavy_check_mark: Task 2;\
 
-Продакшн версія проекту буде автоматично збиратися та деплоїтись на GitHub
-Pages, у гілку `gh-pages`, щоразу, коли оновлюється гілка `main`. Наприклад,
-після прямого пуша або прийнятого пул-реквесту. Для цього необхідно у файлі
-`package.json` змінити значення прапора `--base=/<REPO>/`, для команди `build`,
-замінивши `<REPO>` на назву свого репозиторію, та відправити зміни на GitHub.
+1. Check out the documentation of the Vimeo player library.
+2. Add the library as a project dependency via npm.
+3. Initialize the player in the script file as described in the pre-existing
+   player section, but note that you have added the player as an npm package,
+   not via CDN.
+4. Read the documentation of the on() method and start tracking the timeupdate
+   event - playback time update.
+5. Save playback time to local storage. Let the key for the storage be the
+   "videoplayer-current-time" string.
+6. When reloading the page, use the setCurrentTime() method to resume playback
+   from the saved position.
+7. Add the lodash.throttle library to the project and make sure that the
+   playback time is updated in the storage once a second or less frequent.
 
-```json
-"build": "vite build --base=/<REPO>/",
-```
+:heavy_check_mark: Task 3;
 
-Далі необхідно зайти в налаштування GitHub-репозиторію (`Settings` > `Pages`) та
-виставити роздачу продакшн версії файлів з папки `/root` гілки `gh-pages`, якщо
-це не було зроблено автоматично.
+1. Track the input event on the form, and each time write to local storage an
+   object with the email and message fields, in which you save the current
+   values of the form fields. Let the key for the storage be the
+   "feedback-form-state" string.
+2. When loading the page, check the state of the storage, and if it stores some
+   data, use it to fill in the form fields. Otherwise, the fields must be empty.
+3. When submitting the form, clear the storage and form fields, and also display
+   the object with the email and message fields and their current values in the
+   console.
+4. Make sure that the storage is updated no more than once every 500
+   milliseconds. To do this, add to the project and use the lodash.throttle
+   library.
 
-![GitHub Pages settings](./assets/repo-settings.png)
+## :rocket: Technologies
 
-### Статус деплою
-
-Статус деплою крайнього коміту відображається іконкою біля його ідентифікатора.
-
-- **Жовтий колір** - виконується збірка та деплой проекту.
-- **Зелений колір** - деплой завершився успішно.
-- **Червоний колір** - під час лінтингу, збірки чи деплою сталася помилка.
-
-Більш детальну інформацію про статус можна переглянути натиснувши на іконку, і в
-вікні, що випадає, перейти за посиланням `Details`.
-
-![Deployment status](./assets/deploy-status.png)
-
-### Жива сторінка
-
-Через якийсь час, зазвичай кілька хвилин, живу сторінку можна буде подивитися за
-адресою, вказаною на вкладці `Settings` > `Pages` в налаштуваннях репозиторію.
-Наприклад, ось посилання на живу версію для цього репозиторію
-
-[https://goitacademy.github.io/vanilla-app-template/](https://goitacademy.github.io/vanilla-app-template/).
-
-Якщо відкриється порожня сторінка, переконайся, що у вкладці `Console` немає
-помилок пов'язаних з неправильними шляхами до CSS та JS файлів проекту
-(**404**). Швидше за все у тебе неправильне значення прапора `--base` для
-команди `build` у файлі `package.json`.
-
-## Як це працює
-
-![How it works](./assets/how-it-works.png)
-
-1. Після кожного пуша у гілку `main` GitHub-репозиторію, запускається
-   спеціальний скрипт (GitHub Action) із файлу `.github/workflows/deploy.yml`.
-2. Усі файли репозиторію копіюються на сервер, де проект ініціалізується та
-   проходить лінтинг та збірку перед деплоєм.
-3. Якщо всі кроки пройшли успішно, зібрана продакшн версія файлів проекту
-   відправляється у гілку `gh-pages`. В іншому випадку, у лозі виконання скрипта
-   буде вказано в чому проблема.
+- [JavaScript](https://www.w3schools.com/js/)
+- [HTML](https://www.w3schools.com/html/)
+- [CSS](https://www.w3schools.com/css/)
